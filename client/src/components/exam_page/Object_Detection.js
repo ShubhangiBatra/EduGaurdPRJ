@@ -121,6 +121,7 @@ export default class Detection extends React.Component {
     });
     
     var faces = 0;
+    var mobile=0;
       // if face is not visible till 50 consecutive frames, student is
       // not in front of the computer, throw an error
       if (predictions.length === 0 && this.state.count <50){
@@ -138,8 +139,7 @@ export default class Detection extends React.Component {
 
         if (predictions[i].class === "cell phone") {
           this.props.MobilePhone();
-          swal("Cell Phone Detected", "Action has been Recorded", "error");
-          
+          swal("Cell Phone Detected", "Action has been Recorded", "error"); 
         }
 
         else if (predictions[i].class === "book" || predictions[i].class === "laptop") {
@@ -147,7 +147,7 @@ export default class Detection extends React.Component {
           swal("Prohibited Object Detected", "Action has been Recorded", "error");
           
         }
-        
+
         else if (predictions[i].class === "person") {
           faces += 1;
           this.state.count=0;

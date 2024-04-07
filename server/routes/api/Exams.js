@@ -36,7 +36,7 @@ router.post("/createExam", (req, res) =>{
                 exam_code:req.body.exam_code,
             });
             
-            newExam.save().then(exam=>res.join(exam)).catch(err=> console.log(err));
+            newExam.save().then(exam=>res.json(exam)).catch(err=> console.log(err));
             return res.status(200).json(newExam);
 
         }

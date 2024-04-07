@@ -32,16 +32,16 @@ export default function TestPage(props){
    * to change state of its parent (This component)
    */
   function update_mobile_phone_found(){
-    setMobilePhoneFound(true);
+    setMobilePhoneFound(mobile_phone_found+1);
   }
   function update_prohibited_object_found(){
-    setProhibitedObjectFound(true);
+    setProhibitedObjectFound(prohibited_object_found+1);
   }
   function update_face_not_visible(){
-    setFaceNotVisible(true);
+    setFaceNotVisible(face_not_visible+1);
   }
   function update_multiple_faces_visible(){
-    setMultipleFacesVisible(true);
+    setMultipleFacesVisible(multiple_faces_visible+1);
   }
   /**
    * This function sends the current exam logs to the backend 

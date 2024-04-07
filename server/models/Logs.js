@@ -27,24 +27,24 @@ const LogsSchema = new Schema({
       default:0,
     },
     mobile_found: {
-      type:Boolean,
+      type:Number,
       required:true,
-      default:false,
+      default:0,
     },
     prohibited_object_found: {
-      type:Boolean,
-      required:false,
-      default:false,
+      type:Number,
+      required:true,
+      default:0,
     },
     face_not_visible: {
-      type: Boolean,
-      required: true,
-      default:false,
+      type:Number,
+      required:true,
+      default:0,
     },
     multiple_faces_found: {
-      type: Boolean,
-      required: true,
-      default:false,
+      type:Number,
+      required:true,
+      default:0,
     }
     
   });

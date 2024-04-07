@@ -391,10 +391,10 @@ export default function LogsTable(props) {
                       <TableCell align="left">{row.student_email}</TableCell>
                       <TableCell align="right">{row.tab_change_count}</TableCell>
                       <TableCell align="right">{row.key_press_count}</TableCell>
-                      <TableCell align="left">{row.face_not_visible === true? "Yes" : "No"}</TableCell>
-                      <TableCell align="left">{row.multiple_faces_found === true ? "Yes" : "No"}</TableCell>
-                      <TableCell align="left">{row.mobile_found === true ?"Yes" : "No"}</TableCell>
-                      <TableCell align="left">{row.prohibited_object_found === true ?"Yes" : "No"}</TableCell>
+                      <TableCell align="left">{row.face_not_visible}</TableCell>
+                      <TableCell align="left">{row.multiple_faces_found }</TableCell>
+                      <TableCell align="left">{row.mobile_found }</TableCell>
+                      <TableCell align="left">{row.prohibited_object_found }</TableCell>
                       
                       
                     </TableRow>
